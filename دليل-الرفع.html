@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>دليل رفع الموقع — Bakary Home</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #fdf5e6; color: #3d2000; direction: rtl; line-height: 1.7; }
+  .hero { background: linear-gradient(135deg,#3d2000,#7a5c00); color: #f5d78e; text-align: center; padding: 50px 24px; }
+  .hero h1 { font-size: 2rem; margin-bottom: 8px; }
+  .hero p  { font-size: 1rem; opacity: .8; }
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+  .phase { background: #fff; border-radius: 16px; padding: 30px; margin-bottom: 28px; box-shadow: 0 2px 16px rgba(0,0,0,.08); border-right: 5px solid #c8960c; }
+  .phase-title { font-size: 1.2rem; font-weight: 800; color: #3d2000; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .phase-num { background: #c8960c; color: #fff; width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .9rem; font-weight: 800; flex-shrink: 0; }
+  .step { display: flex; gap: 14px; margin-bottom: 18px; align-items: flex-start; }
+  .step-num { background: #f5ede0; color: #c8960c; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: .82rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+  .step-content h4 { font-size: .95rem; font-weight: 700; color: #3d2000; margin-bottom: 4px; }
+  .step-content p  { font-size: .88rem; color: #6b3a00; }
+  .step-content img-placeholder { display: block; background: #f0e0c0; border-radius: 8px; padding: 12px; text-align: center; font-size: .82rem; color: #999; margin-top: 8px; }
+  .note { background: #fff8e7; border: 1.5px solid #e8b84b; border-radius: 10px; padding: 14px 18px; font-size: .88rem; color: #7a5c00; margin-top: 8px; }
+  .note strong { color: #3d2000; }
+  code { background: #f0e0c0; padding: 2px 8px; border-radius: 5px; font-family: monospace; font-size: .85rem; direction: ltr; display: inline-block; }
+  .highlight { background: linear-gradient(135deg,#c8960c,#7a5c00); color: #fff; border-radius: 12px; padding: 20px 24px; margin-bottom: 28px; text-align: center; }
+  .highlight h3 { font-size: 1.1rem; margin-bottom: 8px; }
+  .highlight p  { font-size: .9rem; opacity: .9; }
+  .done-box { background: #e8f5e9; border: 2px solid #66bb6a; border-radius: 12px; padding: 24px; text-align: center; }
+  .done-box h3 { color: #2e7d32; font-size: 1.2rem; margin-bottom: 8px; }
+  .done-box p  { color: #388e3c; font-size: .9rem; }
+  a { color: #c8960c; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🎂 دليل رفع Bakary Home على الإنترنت</h1>
+  <p>اتبع الخطوات دي بالترتيب وموقعك هيبقى أونلاين في أقل من 15 دقيقة</p>
+</div>
+
+<div class="container">
+
+  <div class="highlight">
+    <h3>⚡ اللي هتعمله في الجملة</h3>
+    <p>GitHub (تخزين الكود) → Railway (تشغيل السيرفر) → رابط موقعك الرسمي ✅</p>
+  </div>
+
+  <!-- PHASE 1: GitHub -->
+  <div class="phase">
+    <div class="phase-title"><div class="phase-num">١</div> إنشاء حساب GitHub ورفع الكود</div>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>افتح <a href="https://github.com" target="_blank">github.com</a></h4>
+        <p>اضغط <strong>Sign up</strong> وعمل حساب بإيميلك</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>عمل Repository جديد</h4>
+        <p>بعد الدخول، اضغط الزرار الأخضر <strong>"New"</strong> أو <strong>"+"</strong> في الأعلى</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>سمّي الـ Repository</h4>
+        <p>في خانة <strong>Repository name</strong> اكتب: <code>bakary-home</code></p>
+        <p>اختار <strong>Public</strong> واضغط <strong>Create repository</strong></p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>رفع الملفات</h4>
+        <p>في الصفحة اللي هتظهر، اضغط <strong>"uploading an existing file"</strong></p>
+        <p>افتح الزيب بتاعك وارفع <strong>كل الملفات والفولدرات</strong> جوا فولدر <code>bakary-node</code></p>
+        <div class="note">
+          <strong>مهم:</strong> ارفع محتوى الفولدر مش الفولدر نفسه — يعني <code>server.js</code> و<code>public</code> و<code>package.json</code> مباشرة
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>احفظ الملفات</h4>
+        <p>تحت الصفحة اضغط <strong>"Commit changes"</strong> الزرار الأخضر</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE 2: Railway -->
+  <div class="phase">
+    <div class="phase-title"><div class="phase-num">٢</div> رفع الموقع على Railway</div>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>افتح <a href="https://railway.app" target="_blank">railway.app</a></h4>
+        <p>اضغط <strong>"Login"</strong> ثم <strong>"Login with GitHub"</strong> — هيستخدم نفس حساب GitHub بتاعك</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>عمل مشروع جديد</h4>
+        <p>اضغط <strong>"New Project"</strong> ثم <strong>"Deploy from GitHub repo"</strong></p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>اختار الـ Repository</h4>
+        <p>هتلاقي <strong>bakary-home</strong> في القائمة — اضغط عليه</p>
+        <div class="note">لو مش ظاهر، اضغط <strong>"Configure GitHub App"</strong> وادي Railway صلاحية وصوله</div>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>اضغط Deploy</h4>
+        <p>Railway هيشتغل تلقائي وهيبني المشروع — استنى دقيقتين لحد ما يخلص</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>جيب الرابط بتاعك</h4>
+        <p>بعد ما يخلص، اضغط على المشروع ← تبويب <strong>Settings</strong> ← <strong>Networking</strong> ← <strong>"Generate Domain"</strong></p>
+        <p>هتاخد رابط زي: <code>bakary-home.up.railway.app</code> ✅</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE 3: Test -->
+  <div class="phase">
+    <div class="phase-title"><div class="phase-num">٣</div> تأكيد إن كل حاجة شغالة</div>
+
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>افتح الموقع</h4>
+        <p>افتح الرابط بتاعك في المتصفح وتأكد إن الموقع بيظهر</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>جرب الفورم</h4>
+        <p>اكتب طلب تجريبي في صفحة "تواصل معنا" واضغط إرسال</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>افتح لوحة الأدمن</h4>
+        <p>افتح: <code>رابطك/admin.html</code></p>
+        <p>كلمة السر: <code>bakery2025</code></p>
+        <p>المفروض تلاقي الطلب التجريبي موجود ✅</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="done-box">
+    <h3>🎉 موقعك أونلاين!</h3>
+    <p>أي حد في العالم يقدر يطلب من موقعك<br/>وإنت بتشوف الطلبات في لوحة الأدمن السرية</p>
+    <br/>
+    <p><strong>الموقع:</strong> رابطك من Railway</p>
+    <p><strong>الأدمن:</strong> رابطك/admin.html — كلمة السر: bakery2025</p>
+  </div>
+
+</div>
+</body>
+</html>
